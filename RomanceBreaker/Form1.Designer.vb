@@ -40,17 +40,34 @@ Partial Class frmMain
         Me.btnOn = New System.Windows.Forms.PictureBox()
         Me.btnClose = New System.Windows.Forms.PictureBox()
         Me.pnlMessenger = New System.Windows.Forms.Panel()
-        Me.msngrUsernameUnderline = New System.Windows.Forms.Panel()
-        Me.msngrUsername = New System.Windows.Forms.TextBox()
-        Me.msngrTitle = New System.Windows.Forms.Label()
-        Me.msngrUsernamePic = New System.Windows.Forms.PictureBox()
-        Me.msngrPasswordPic = New System.Windows.Forms.PictureBox()
-        Me.msngrPasswordUnderline = New System.Windows.Forms.Panel()
-        Me.msngrPassword = New System.Windows.Forms.TextBox()
+        Me.lblMsngrInstructions = New System.Windows.Forms.Label()
+        Me.msngrModePic = New System.Windows.Forms.PictureBox()
         Me.msngrBaePic = New System.Windows.Forms.PictureBox()
         Me.msngrBaeUnderline = New System.Windows.Forms.Panel()
         Me.msngrBae = New System.Windows.Forms.TextBox()
-        Me.msngrModePic = New System.Windows.Forms.PictureBox()
+        Me.msngrPasswordPic = New System.Windows.Forms.PictureBox()
+        Me.msngrPasswordUnderline = New System.Windows.Forms.Panel()
+        Me.msngrPassword = New System.Windows.Forms.TextBox()
+        Me.msngrUsernamePic = New System.Windows.Forms.PictureBox()
+        Me.msngrTitle = New System.Windows.Forms.Label()
+        Me.msngrUsernameUnderline = New System.Windows.Forms.Panel()
+        Me.msngrUsername = New System.Windows.Forms.TextBox()
+        Me.pnlEdit = New System.Windows.Forms.Panel()
+        Me.lblEdit = New System.Windows.Forms.Label()
+        Me.btnEdit = New System.Windows.Forms.PictureBox()
+        Me.pnlTelegram = New System.Windows.Forms.Panel()
+        Me.lblTlgrmInstructions = New System.Windows.Forms.Label()
+        Me.tlgrmModePic = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.tlgrmTitle = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         CType(Me.btnOff, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMessenger, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnSms, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,10 +81,17 @@ Partial Class frmMain
         CType(Me.btnOn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlMessenger.SuspendLayout()
-        CType(Me.msngrUsernamePic, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.msngrPasswordPic, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.msngrBaePic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.msngrModePic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.msngrBaePic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.msngrPasswordPic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.msngrUsernamePic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlEdit.SuspendLayout()
+        CType(Me.btnEdit, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pnlTelegram.SuspendLayout()
+        CType(Me.tlgrmModePic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnOff
@@ -131,7 +155,7 @@ Partial Class frmMain
         Me.pnlDefault.Location = New System.Drawing.Point(4, 137)
         Me.pnlDefault.Margin = New System.Windows.Forms.Padding(1)
         Me.pnlDefault.Name = "pnlDefault"
-        Me.pnlDefault.Size = New System.Drawing.Size(465, 322)
+        Me.pnlDefault.Size = New System.Drawing.Size(465, 264)
         Me.pnlDefault.TabIndex = 5
         '
         'lblDefault
@@ -140,7 +164,7 @@ Partial Class frmMain
         Me.lblDefault.AutoSize = True
         Me.lblDefault.Font = New System.Drawing.Font("Segoe UI Light", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
         Me.lblDefault.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.lblDefault.Location = New System.Drawing.Point(153, 153)
+        Me.lblDefault.Location = New System.Drawing.Point(153, 124)
         Me.lblDefault.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.lblDefault.Name = "lblDefault"
         Me.lblDefault.Size = New System.Drawing.Size(159, 17)
@@ -219,7 +243,7 @@ Partial Class frmMain
         Me.pnlOnOff.Controls.Add(Me.btnOff)
         Me.pnlOnOff.Controls.Add(Me.btnOn)
         Me.pnlOnOff.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.pnlOnOff.Location = New System.Drawing.Point(510, 351)
+        Me.pnlOnOff.Location = New System.Drawing.Point(510, 324)
         Me.pnlOnOff.Name = "pnlOnOff"
         Me.pnlOnOff.Size = New System.Drawing.Size(69, 77)
         Me.pnlOnOff.TabIndex = 9
@@ -263,6 +287,7 @@ Partial Class frmMain
         '
         'pnlMessenger
         '
+        Me.pnlMessenger.Controls.Add(Me.lblMsngrInstructions)
         Me.pnlMessenger.Controls.Add(Me.msngrModePic)
         Me.pnlMessenger.Controls.Add(Me.msngrBaePic)
         Me.pnlMessenger.Controls.Add(Me.msngrBaeUnderline)
@@ -277,53 +302,64 @@ Partial Class frmMain
         Me.pnlMessenger.Location = New System.Drawing.Point(3, 136)
         Me.pnlMessenger.Margin = New System.Windows.Forms.Padding(1)
         Me.pnlMessenger.Name = "pnlMessenger"
-        Me.pnlMessenger.Size = New System.Drawing.Size(465, 322)
+        Me.pnlMessenger.Size = New System.Drawing.Size(465, 265)
         Me.pnlMessenger.TabIndex = 8
         Me.pnlMessenger.Visible = False
         '
-        'msngrUsernameUnderline
+        'lblMsngrInstructions
         '
-        Me.msngrUsernameUnderline.BackColor = System.Drawing.Color.White
-        Me.msngrUsernameUnderline.ForeColor = System.Drawing.Color.White
-        Me.msngrUsernameUnderline.Location = New System.Drawing.Point(65, 64)
-        Me.msngrUsernameUnderline.Name = "msngrUsernameUnderline"
-        Me.msngrUsernameUnderline.Size = New System.Drawing.Size(200, 1)
-        Me.msngrUsernameUnderline.TabIndex = 11
+        Me.lblMsngrInstructions.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.lblMsngrInstructions.AutoSize = True
+        Me.lblMsngrInstructions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblMsngrInstructions.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMsngrInstructions.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblMsngrInstructions.Location = New System.Drawing.Point(17, 242)
+        Me.lblMsngrInstructions.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.lblMsngrInstructions.Name = "lblMsngrInstructions"
+        Me.lblMsngrInstructions.Size = New System.Drawing.Size(429, 13)
+        Me.lblMsngrInstructions.TabIndex = 21
+        Me.lblMsngrInstructions.Text = "Insert your messneger USERNAME, your PASSWORD and your bae's messenger USERNAME"
+        Me.lblMsngrInstructions.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'msngrUsername
+        'msngrModePic
         '
-        Me.msngrUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.msngrUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.msngrUsername.ForeColor = System.Drawing.SystemColors.Menu
-        Me.msngrUsername.Location = New System.Drawing.Point(66, 50)
-        Me.msngrUsername.Name = "msngrUsername"
-        Me.msngrUsername.Size = New System.Drawing.Size(200, 13)
-        Me.msngrUsername.TabIndex = 10
-        Me.msngrUsername.Tag = "username"
+        Me.msngrModePic.BackgroundImage = CType(resources.GetObject("msngrModePic.BackgroundImage"), System.Drawing.Image)
+        Me.msngrModePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.msngrModePic.Location = New System.Drawing.Point(307, 34)
+        Me.msngrModePic.Name = "msngrModePic"
+        Me.msngrModePic.Size = New System.Drawing.Size(128, 128)
+        Me.msngrModePic.TabIndex = 20
+        Me.msngrModePic.TabStop = False
         '
-        'msngrTitle
+        'msngrBaePic
         '
-        Me.msngrTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
-        Me.msngrTitle.AutoSize = True
-        Me.msngrTitle.Font = New System.Drawing.Font("Segoe UI Light", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.msngrTitle.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.msngrTitle.Location = New System.Drawing.Point(27, 11)
-        Me.msngrTitle.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
-        Me.msngrTitle.Name = "msngrTitle"
-        Me.msngrTitle.Size = New System.Drawing.Size(192, 30)
-        Me.msngrTitle.TabIndex = 12
-        Me.msngrTitle.Text = "Messenger Mode:"
-        Me.msngrTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.msngrBaePic.BackgroundImage = CType(resources.GetObject("msngrBaePic.BackgroundImage"), System.Drawing.Image)
+        Me.msngrBaePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.msngrBaePic.Location = New System.Drawing.Point(34, 115)
+        Me.msngrBaePic.Name = "msngrBaePic"
+        Me.msngrBaePic.Size = New System.Drawing.Size(26, 26)
+        Me.msngrBaePic.TabIndex = 19
+        Me.msngrBaePic.TabStop = False
         '
-        'msngrUsernamePic
+        'msngrBaeUnderline
         '
-        Me.msngrUsernamePic.BackgroundImage = CType(resources.GetObject("msngrUsernamePic.BackgroundImage"), System.Drawing.Image)
-        Me.msngrUsernamePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.msngrUsernamePic.Location = New System.Drawing.Point(32, 44)
-        Me.msngrUsernamePic.Name = "msngrUsernamePic"
-        Me.msngrUsernamePic.Size = New System.Drawing.Size(26, 26)
-        Me.msngrUsernamePic.TabIndex = 13
-        Me.msngrUsernamePic.TabStop = False
+        Me.msngrBaeUnderline.BackColor = System.Drawing.Color.White
+        Me.msngrBaeUnderline.ForeColor = System.Drawing.Color.White
+        Me.msngrBaeUnderline.Location = New System.Drawing.Point(67, 135)
+        Me.msngrBaeUnderline.Name = "msngrBaeUnderline"
+        Me.msngrBaeUnderline.Size = New System.Drawing.Size(200, 1)
+        Me.msngrBaeUnderline.TabIndex = 18
+        '
+        'msngrBae
+        '
+        Me.msngrBae.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.msngrBae.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.msngrBae.ForeColor = System.Drawing.SystemColors.Menu
+        Me.msngrBae.Location = New System.Drawing.Point(68, 121)
+        Me.msngrBae.Name = "msngrBae"
+        Me.msngrBae.Size = New System.Drawing.Size(200, 13)
+        Me.msngrBae.TabIndex = 17
+        Me.msngrBae.Tag = "Password"
         '
         'msngrPasswordPic
         '
@@ -356,59 +392,255 @@ Partial Class frmMain
         Me.msngrPassword.TabIndex = 14
         Me.msngrPassword.Tag = "Password"
         '
-        'msngrBaePic
+        'msngrUsernamePic
         '
-        Me.msngrBaePic.BackgroundImage = CType(resources.GetObject("msngrBaePic.BackgroundImage"), System.Drawing.Image)
-        Me.msngrBaePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.msngrBaePic.Location = New System.Drawing.Point(34, 115)
-        Me.msngrBaePic.Name = "msngrBaePic"
-        Me.msngrBaePic.Size = New System.Drawing.Size(26, 26)
-        Me.msngrBaePic.TabIndex = 19
-        Me.msngrBaePic.TabStop = False
+        Me.msngrUsernamePic.BackgroundImage = CType(resources.GetObject("msngrUsernamePic.BackgroundImage"), System.Drawing.Image)
+        Me.msngrUsernamePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.msngrUsernamePic.Location = New System.Drawing.Point(32, 44)
+        Me.msngrUsernamePic.Name = "msngrUsernamePic"
+        Me.msngrUsernamePic.Size = New System.Drawing.Size(26, 26)
+        Me.msngrUsernamePic.TabIndex = 13
+        Me.msngrUsernamePic.TabStop = False
         '
-        'msngrBaeUnderline
+        'msngrTitle
         '
-        Me.msngrBaeUnderline.BackColor = System.Drawing.Color.White
-        Me.msngrBaeUnderline.ForeColor = System.Drawing.Color.White
-        Me.msngrBaeUnderline.Location = New System.Drawing.Point(67, 135)
-        Me.msngrBaeUnderline.Name = "msngrBaeUnderline"
-        Me.msngrBaeUnderline.Size = New System.Drawing.Size(200, 1)
-        Me.msngrBaeUnderline.TabIndex = 18
+        Me.msngrTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.msngrTitle.AutoSize = True
+        Me.msngrTitle.Font = New System.Drawing.Font("Segoe UI Light", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.msngrTitle.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.msngrTitle.Location = New System.Drawing.Point(27, 11)
+        Me.msngrTitle.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.msngrTitle.Name = "msngrTitle"
+        Me.msngrTitle.Size = New System.Drawing.Size(192, 30)
+        Me.msngrTitle.TabIndex = 12
+        Me.msngrTitle.Text = "Messenger Mode:"
+        Me.msngrTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'msngrBae
+        'msngrUsernameUnderline
         '
-        Me.msngrBae.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.msngrBae.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.msngrBae.ForeColor = System.Drawing.SystemColors.Menu
-        Me.msngrBae.Location = New System.Drawing.Point(68, 121)
-        Me.msngrBae.Name = "msngrBae"
-        Me.msngrBae.Size = New System.Drawing.Size(200, 13)
-        Me.msngrBae.TabIndex = 17
-        Me.msngrBae.Tag = "Password"
+        Me.msngrUsernameUnderline.BackColor = System.Drawing.Color.White
+        Me.msngrUsernameUnderline.ForeColor = System.Drawing.Color.White
+        Me.msngrUsernameUnderline.Location = New System.Drawing.Point(65, 64)
+        Me.msngrUsernameUnderline.Name = "msngrUsernameUnderline"
+        Me.msngrUsernameUnderline.Size = New System.Drawing.Size(200, 1)
+        Me.msngrUsernameUnderline.TabIndex = 11
         '
-        'msngrModePic
+        'msngrUsername
         '
-        Me.msngrModePic.BackgroundImage = CType(resources.GetObject("msngrModePic.BackgroundImage"), System.Drawing.Image)
-        Me.msngrModePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.msngrModePic.Location = New System.Drawing.Point(307, 34)
-        Me.msngrModePic.Name = "msngrModePic"
-        Me.msngrModePic.Size = New System.Drawing.Size(128, 128)
-        Me.msngrModePic.TabIndex = 20
-        Me.msngrModePic.TabStop = False
+        Me.msngrUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.msngrUsername.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.msngrUsername.ForeColor = System.Drawing.SystemColors.Menu
+        Me.msngrUsername.Location = New System.Drawing.Point(66, 50)
+        Me.msngrUsername.Name = "msngrUsername"
+        Me.msngrUsername.Size = New System.Drawing.Size(200, 13)
+        Me.msngrUsername.TabIndex = 10
+        Me.msngrUsername.Tag = "username"
+        '
+        'pnlEdit
+        '
+        Me.pnlEdit.Controls.Add(Me.lblEdit)
+        Me.pnlEdit.Controls.Add(Me.btnEdit)
+        Me.pnlEdit.Location = New System.Drawing.Point(483, 170)
+        Me.pnlEdit.Name = "pnlEdit"
+        Me.pnlEdit.Size = New System.Drawing.Size(125, 108)
+        Me.pnlEdit.TabIndex = 11
+        '
+        'lblEdit
+        '
+        Me.lblEdit.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.lblEdit.AutoSize = True
+        Me.lblEdit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblEdit.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEdit.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblEdit.Location = New System.Drawing.Point(9, 76)
+        Me.lblEdit.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.lblEdit.MaximumSize = New System.Drawing.Size(125, 0)
+        Me.lblEdit.Name = "lblEdit"
+        Me.lblEdit.Size = New System.Drawing.Size(107, 26)
+        Me.lblEdit.TabIndex = 8
+        Me.lblEdit.Text = "Edit custom messages and time interval"
+        Me.lblEdit.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'btnEdit
+        '
+        Me.btnEdit.BackgroundImage = CType(resources.GetObject("btnEdit.BackgroundImage"), System.Drawing.Image)
+        Me.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnEdit.Location = New System.Drawing.Point(33, 0)
+        Me.btnEdit.Name = "btnEdit"
+        Me.btnEdit.Size = New System.Drawing.Size(59, 70)
+        Me.btnEdit.TabIndex = 0
+        Me.btnEdit.TabStop = False
+        '
+        'pnlTelegram
+        '
+        Me.pnlTelegram.Controls.Add(Me.lblTlgrmInstructions)
+        Me.pnlTelegram.Controls.Add(Me.tlgrmModePic)
+        Me.pnlTelegram.Controls.Add(Me.PictureBox2)
+        Me.pnlTelegram.Controls.Add(Me.Panel2)
+        Me.pnlTelegram.Controls.Add(Me.TextBox1)
+        Me.pnlTelegram.Controls.Add(Me.PictureBox3)
+        Me.pnlTelegram.Controls.Add(Me.Panel3)
+        Me.pnlTelegram.Controls.Add(Me.TextBox2)
+        Me.pnlTelegram.Controls.Add(Me.PictureBox4)
+        Me.pnlTelegram.Controls.Add(Me.tlgrmTitle)
+        Me.pnlTelegram.Controls.Add(Me.Panel4)
+        Me.pnlTelegram.Controls.Add(Me.TextBox3)
+        Me.pnlTelegram.Location = New System.Drawing.Point(4, 137)
+        Me.pnlTelegram.Margin = New System.Windows.Forms.Padding(1)
+        Me.pnlTelegram.Name = "pnlTelegram"
+        Me.pnlTelegram.Size = New System.Drawing.Size(465, 265)
+        Me.pnlTelegram.TabIndex = 12
+        Me.pnlTelegram.Visible = False
+        '
+        'lblTlgrmInstructions
+        '
+        Me.lblTlgrmInstructions.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.lblTlgrmInstructions.AutoSize = True
+        Me.lblTlgrmInstructions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblTlgrmInstructions.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTlgrmInstructions.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.lblTlgrmInstructions.Location = New System.Drawing.Point(16, 228)
+        Me.lblTlgrmInstructions.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.lblTlgrmInstructions.MaximumSize = New System.Drawing.Size(430, 0)
+        Me.lblTlgrmInstructions.Name = "lblTlgrmInstructions"
+        Me.lblTlgrmInstructions.Size = New System.Drawing.Size(401, 26)
+        Me.lblTlgrmInstructions.TabIndex = 22
+        Me.lblTlgrmInstructions.Text = "Insert your telegram USERNAME, your API_ID, API_HASH, your PHONE and your bae's U" &
+    "SERNAME. Api Hash and ID obtainable from https://my.telegram.org."
+        Me.lblTlgrmInstructions.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'tlgrmModePic
+        '
+        Me.tlgrmModePic.BackgroundImage = CType(resources.GetObject("tlgrmModePic.BackgroundImage"), System.Drawing.Image)
+        Me.tlgrmModePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.tlgrmModePic.Location = New System.Drawing.Point(307, 34)
+        Me.tlgrmModePic.Name = "tlgrmModePic"
+        Me.tlgrmModePic.Size = New System.Drawing.Size(128, 128)
+        Me.tlgrmModePic.TabIndex = 20
+        Me.tlgrmModePic.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Location = New System.Drawing.Point(34, 115)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(26, 26)
+        Me.PictureBox2.TabIndex = 19
+        Me.PictureBox2.TabStop = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.ForeColor = System.Drawing.Color.White
+        Me.Panel2.Location = New System.Drawing.Point(67, 135)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(200, 1)
+        Me.Panel2.TabIndex = 18
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.Menu
+        Me.TextBox1.Location = New System.Drawing.Point(68, 121)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(200, 13)
+        Me.TextBox1.TabIndex = 17
+        Me.TextBox1.Tag = "Password"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox3.Location = New System.Drawing.Point(33, 80)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(26, 26)
+        Me.PictureBox3.TabIndex = 16
+        Me.PictureBox3.TabStop = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.White
+        Me.Panel3.ForeColor = System.Drawing.Color.White
+        Me.Panel3.Location = New System.Drawing.Point(66, 100)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(200, 1)
+        Me.Panel3.TabIndex = 15
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.Menu
+        Me.TextBox2.Location = New System.Drawing.Point(67, 86)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox2.Size = New System.Drawing.Size(200, 13)
+        Me.TextBox2.TabIndex = 14
+        Me.TextBox2.Tag = "Password"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox4.Location = New System.Drawing.Point(32, 44)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(26, 26)
+        Me.PictureBox4.TabIndex = 13
+        Me.PictureBox4.TabStop = False
+        '
+        'tlgrmTitle
+        '
+        Me.tlgrmTitle.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.tlgrmTitle.AutoSize = True
+        Me.tlgrmTitle.Font = New System.Drawing.Font("Segoe UI Light", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tlgrmTitle.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.tlgrmTitle.Location = New System.Drawing.Point(27, 11)
+        Me.tlgrmTitle.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.tlgrmTitle.Name = "tlgrmTitle"
+        Me.tlgrmTitle.Size = New System.Drawing.Size(174, 30)
+        Me.tlgrmTitle.TabIndex = 12
+        Me.tlgrmTitle.Text = "Telegram Mode:"
+        Me.tlgrmTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.White
+        Me.Panel4.ForeColor = System.Drawing.Color.White
+        Me.Panel4.Location = New System.Drawing.Point(65, 64)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(200, 1)
+        Me.Panel4.TabIndex = 11
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.ForeColor = System.Drawing.SystemColors.Menu
+        Me.TextBox3.Location = New System.Drawing.Point(66, 50)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(200, 13)
+        Me.TextBox3.TabIndex = 10
+        Me.TextBox3.Tag = "username"
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(618, 502)
-        Me.Controls.Add(Me.btnClose)
+        Me.ClientSize = New System.Drawing.Size(618, 421)
+        Me.Controls.Add(Me.pnlTelegram)
         Me.Controls.Add(Me.pnlMessenger)
+        Me.Controls.Add(Me.pnlEdit)
+        Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.pnlOnOff)
         Me.Controls.Add(Me.pnlGithub)
         Me.Controls.Add(Me.pnlChoice)
         Me.Controls.Add(Me.pnlDefault)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(1)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -431,10 +663,19 @@ Partial Class frmMain
         CType(Me.btnClose, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlMessenger.ResumeLayout(False)
         Me.pnlMessenger.PerformLayout()
-        CType(Me.msngrUsernamePic, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.msngrPasswordPic, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.msngrBaePic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.msngrModePic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.msngrBaePic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.msngrPasswordPic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.msngrUsernamePic, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlEdit.ResumeLayout(False)
+        Me.pnlEdit.PerformLayout()
+        CType(Me.btnEdit, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pnlTelegram.ResumeLayout(False)
+        Me.pnlTelegram.PerformLayout()
+        CType(Me.tlgrmModePic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -467,4 +708,21 @@ Partial Class frmMain
     Friend WithEvents msngrBaeUnderline As Panel
     Friend WithEvents msngrBae As TextBox
     Friend WithEvents msngrModePic As PictureBox
+    Friend WithEvents pnlEdit As Panel
+    Friend WithEvents lblEdit As Label
+    Friend WithEvents btnEdit As PictureBox
+    Friend WithEvents pnlTelegram As Panel
+    Friend WithEvents tlgrmModePic As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents tlgrmTitle As Label
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents lblMsngrInstructions As Label
+    Friend WithEvents lblTlgrmInstructions As Label
 End Class
