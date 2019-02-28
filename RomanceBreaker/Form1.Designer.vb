@@ -141,6 +141,7 @@ Partial Class frmMain
         '
         Me.btnMessenger.BackgroundImage = CType(resources.GetObject("btnMessenger.BackgroundImage"), System.Drawing.Image)
         Me.btnMessenger.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMessenger.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnMessenger.Location = New System.Drawing.Point(57, 41)
         Me.btnMessenger.Margin = New System.Windows.Forms.Padding(1)
         Me.btnMessenger.Name = "btnMessenger"
@@ -152,6 +153,7 @@ Partial Class frmMain
         '
         Me.btnSms.BackgroundImage = CType(resources.GetObject("btnSms.BackgroundImage"), System.Drawing.Image)
         Me.btnSms.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnSms.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSms.Location = New System.Drawing.Point(105, 41)
         Me.btnSms.Margin = New System.Windows.Forms.Padding(1)
         Me.btnSms.Name = "btnSms"
@@ -163,6 +165,7 @@ Partial Class frmMain
         '
         Me.btnTelegram.BackgroundImage = CType(resources.GetObject("btnTelegram.BackgroundImage"), System.Drawing.Image)
         Me.btnTelegram.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnTelegram.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnTelegram.Location = New System.Drawing.Point(154, 41)
         Me.btnTelegram.Margin = New System.Windows.Forms.Padding(1)
         Me.btnTelegram.Name = "btnTelegram"
@@ -174,6 +177,7 @@ Partial Class frmMain
         '
         Me.btnWhatsapp.BackgroundImage = CType(resources.GetObject("btnWhatsapp.BackgroundImage"), System.Drawing.Image)
         Me.btnWhatsapp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnWhatsapp.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnWhatsapp.Location = New System.Drawing.Point(203, 41)
         Me.btnWhatsapp.Margin = New System.Windows.Forms.Padding(1)
         Me.btnWhatsapp.Name = "btnWhatsapp"
@@ -345,7 +349,7 @@ Partial Class frmMain
         '
         Me.lblMsngrInstructions.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
         Me.lblMsngrInstructions.AutoSize = True
-        Me.lblMsngrInstructions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblMsngrInstructions.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.lblMsngrInstructions.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblMsngrInstructions.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.lblMsngrInstructions.Location = New System.Drawing.Point(17, 242)
@@ -751,7 +755,7 @@ Partial Class frmMain
         '
         Me.lblSmsInstructions.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
         Me.lblSmsInstructions.AutoSize = True
-        Me.lblSmsInstructions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblSmsInstructions.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.lblSmsInstructions.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSmsInstructions.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.lblSmsInstructions.Location = New System.Drawing.Point(17, 242)
@@ -837,7 +841,7 @@ Partial Class frmMain
         '
         Me.lblWaInstructions.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
         Me.lblWaInstructions.AutoSize = True
-        Me.lblWaInstructions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblWaInstructions.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.lblWaInstructions.Font = New System.Drawing.Font("Segoe UI Light", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWaInstructions.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.lblWaInstructions.Location = New System.Drawing.Point(17, 242)

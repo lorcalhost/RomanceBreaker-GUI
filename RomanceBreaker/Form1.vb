@@ -39,6 +39,10 @@
     Private tlgrmBaeInput = False
     Private waBaeInput = False
 
+    'Copyright label'
+    Private Sub copytightLbl_Click() Handles copytightLbl.Click
+        Process.Start("https://github.com/lorcalhost/")
+    End Sub
     'GitHub button'
     Private Sub btnGithub_Click() Handles btnGithub.Click
         Process.Start("https://github.com/lorcalhost/RomanceBreaker")
