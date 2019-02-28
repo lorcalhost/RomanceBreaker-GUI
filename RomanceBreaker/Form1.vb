@@ -25,6 +25,16 @@
         End If
     End Sub
 
+    'Close Processes function'
+    Private Sub killProcesses()
+        For Each proc As Process In Process.GetProcessesByName("Python")
+            proc.Kill()
+        Next
+        For Each proc As Process In Process.GetProcessesByName("chromedriver")
+            proc.Kill()
+        Next
+    End Sub
+
     'Constants'
     Private console = CreateObject("WScript.Shell")
     Private currentMode = 0
@@ -131,10 +141,12 @@
         btnWhatsapp.Enabled = True
         btnEdit.Enabled = True
         lblEdit.Enabled = True
+        killProcesses()
     End Sub
 
     'Window close button'
     Private Sub btnClose_Click() Handles btnClose.Click
+        killProcesses()
         Application.Exit()
     End Sub
 
