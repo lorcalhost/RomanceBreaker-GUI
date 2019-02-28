@@ -90,6 +90,7 @@ Partial Class frmMain
         Me.waTitle = New System.Windows.Forms.Label()
         Me.copytightLbl = New System.Windows.Forms.Label()
         Me.sidePnl = New System.Windows.Forms.Panel()
+        Me.btnMinimize = New System.Windows.Forms.PictureBox()
         CType(Me.btnOff, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMessenger, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnSms, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -121,6 +122,7 @@ Partial Class frmMain
         CType(Me.waModePic, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.waBaePic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidePnl.SuspendLayout()
+        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnOff
@@ -927,12 +929,24 @@ Partial Class frmMain
         Me.sidePnl.Size = New System.Drawing.Size(148, 374)
         Me.sidePnl.TabIndex = 23
         '
+        'btnMinimize
+        '
+        Me.btnMinimize.BackgroundImage = CType(resources.GetObject("btnMinimize.BackgroundImage"), System.Drawing.Image)
+        Me.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinimize.Location = New System.Drawing.Point(560, 2)
+        Me.btnMinimize.Name = "btnMinimize"
+        Me.btnMinimize.Size = New System.Drawing.Size(25, 25)
+        Me.btnMinimize.TabIndex = 24
+        Me.btnMinimize.TabStop = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(621, 411)
+        Me.Controls.Add(Me.btnMinimize)
         Me.Controls.Add(Me.copytightLbl)
         Me.Controls.Add(Me.sidePnl)
         Me.Controls.Add(Me.pnlWa)
@@ -988,6 +1002,7 @@ Partial Class frmMain
         CType(Me.waModePic, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.waBaePic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.sidePnl.ResumeLayout(False)
+        CType(Me.btnMinimize, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1060,4 +1075,5 @@ Partial Class frmMain
     Friend WithEvents waTitle As Label
     Friend WithEvents copytightLbl As Label
     Friend WithEvents sidePnl As Panel
+    Friend WithEvents btnMinimize As PictureBox
 End Class

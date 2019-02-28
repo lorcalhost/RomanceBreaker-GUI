@@ -105,7 +105,7 @@
                     btnOn_Click()
                 End If
             ElseIf currentMode = 4 Then
-                If smsBaeInput Then
+                If waBaeInput Then
                     MsgBox("A popup view of WhatsApp web will now open,\nScan the QR code in the page via your app\nDon't close the popup")
                     Dim bae As String = waBae.Text
                     console.run("python " & Application.StartupPath() & "\whatsappRB.py " & bae, vbHide)
@@ -130,8 +130,13 @@
     End Sub
 
     'Window close button'
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+    Private Sub btnClose_Click() Handles btnClose.Click
         Application.Exit()
+    End Sub
+
+    'Window minimize button'
+    Private Sub btnMinimize_Click() Handles btnMinimize.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 
     'Mode selection buttons'
@@ -401,4 +406,5 @@
             waBae.Text = "Bae's contact name"
         End If
     End Sub
+
 End Class
