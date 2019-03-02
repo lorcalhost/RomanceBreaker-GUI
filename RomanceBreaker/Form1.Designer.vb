@@ -91,6 +91,7 @@ Partial Class frmMain
         Me.copytightLbl = New System.Windows.Forms.Label()
         Me.sidePnl = New System.Windows.Forms.Panel()
         Me.btnMinimize = New System.Windows.Forms.PictureBox()
+        Me.lblInstallPython = New System.Windows.Forms.Label()
         CType(Me.btnOff, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMessenger, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnSms, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -188,6 +189,7 @@ Partial Class frmMain
         'pnlDefault
         '
         Me.pnlDefault.Controls.Add(Me.lblDefault)
+        Me.pnlDefault.Controls.Add(Me.lblInstallPython)
         Me.pnlDefault.Location = New System.Drawing.Point(4, 137)
         Me.pnlDefault.Margin = New System.Windows.Forms.Padding(1)
         Me.pnlDefault.Name = "pnlDefault"
@@ -200,7 +202,7 @@ Partial Class frmMain
         Me.lblDefault.AutoSize = True
         Me.lblDefault.Font = New System.Drawing.Font("Segoe UI Light", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
         Me.lblDefault.ForeColor = System.Drawing.SystemColors.ScrollBar
-        Me.lblDefault.Location = New System.Drawing.Point(153, 124)
+        Me.lblDefault.Location = New System.Drawing.Point(153, 77)
         Me.lblDefault.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.lblDefault.Name = "lblDefault"
         Me.lblDefault.Size = New System.Drawing.Size(159, 17)
@@ -944,12 +946,28 @@ Partial Class frmMain
         Me.btnMinimize.TabIndex = 24
         Me.btnMinimize.TabStop = False
         '
+        'lblInstallPython
+        '
+        Me.lblInstallPython.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar
+        Me.lblInstallPython.AutoSize = True
+        Me.lblInstallPython.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lblInstallPython.Font = New System.Drawing.Font("Segoe UI Light", 13.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, CType(0, Byte))
+        Me.lblInstallPython.ForeColor = System.Drawing.SystemColors.ScrollBar
+        Me.lblInstallPython.Location = New System.Drawing.Point(58, 124)
+        Me.lblInstallPython.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.lblInstallPython.Name = "lblInstallPython"
+        Me.lblInstallPython.Size = New System.Drawing.Size(349, 17)
+        Me.lblInstallPython.TabIndex = 8
+        Me.lblInstallPython.Text = "Make sure Python 3 is installed, if it's not click here."
+        Me.lblInstallPython.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(36, Byte), Integer), CType(CType(49, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(621, 411)
+        Me.Controls.Add(Me.pnlDefault)
         Me.Controls.Add(Me.btnMinimize)
         Me.Controls.Add(Me.copytightLbl)
         Me.Controls.Add(Me.sidePnl)
@@ -959,7 +977,6 @@ Partial Class frmMain
         Me.Controls.Add(Me.pnlTelegram)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.pnlChoice)
-        Me.Controls.Add(Me.pnlDefault)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(1)
@@ -1080,4 +1097,5 @@ Partial Class frmMain
     Friend WithEvents copytightLbl As Label
     Friend WithEvents sidePnl As Panel
     Friend WithEvents btnMinimize As PictureBox
+    Friend WithEvents lblInstallPython As Label
 End Class

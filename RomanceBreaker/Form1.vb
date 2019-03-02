@@ -15,14 +15,7 @@
 
     'Checking Python environment installation'
     Private Sub frmMain_Load() Handles MyBase.Load
-        Dim appDataPath As String = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
-        If IO.Directory.Exists(appDataPath + "\Python\Python37") = False Then
-            MsgBox("Python 3.7 was not found on this machine, install it before running RomanceBreaker!")
-            Process.Start("https://www.python.org/downloads/")
-            Application.Exit()
-        Else
-            console.run("pip3 install fbchat bs4 telethon selenium pyperclip", vbHide)
-        End If
+        console.run("pip3 install fbchat bs4 telethon selenium pyperclip", vbHide)
     End Sub
 
     'Close Processes function'
@@ -423,4 +416,8 @@
         End If
     End Sub
 
+    Private Sub lblInstallPython_Click() Handles lblInstallPython.Click
+        Process.Start("https://www.python.org/downloads/")
+        Application.Exit()
+    End Sub
 End Class
